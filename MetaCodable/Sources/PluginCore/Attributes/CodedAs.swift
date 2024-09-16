@@ -1,6 +1,6 @@
  import SwiftSyntax
  import SwiftSyntaxMacros
-import OrderedCollections
+import MCOrderedCollections
 
 /// Attribute type for `CodedAs` macro-attribute.
 ///

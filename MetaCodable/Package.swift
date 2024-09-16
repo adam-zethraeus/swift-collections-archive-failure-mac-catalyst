@@ -33,16 +33,16 @@ let package = Package(
                 .product(name: "SwiftDiagnostics", package: "swift-syntax"),
                 .product(name: "SwiftSyntaxBuilder", package: "swift-syntax"),
                 .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
-                "OrderedCollections"
+                "MCOrderedCollections"
             ]
         ),
         .target(
-          name: "OrderedCollections",
-          dependencies: ["InternalCollectionsUtilities"],
+          name: "MCOrderedCollections",
+          dependencies: ["MCInternalCollectionsUtilities"],
           exclude: ["CMakeLists.txt"]
         ),
         .target(
-          name: "InternalCollectionsUtilities",
+          name: "MCInternalCollectionsUtilities",
           exclude: [
             "CMakeLists.txt",
             "Compatibility/UnsafeMutableBufferPointer+SE-0370.swift.gyb",

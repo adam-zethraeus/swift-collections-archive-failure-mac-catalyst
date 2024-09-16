@@ -1,7 +1,7 @@
  import SwiftSyntax
  import SwiftSyntaxBuilder
  import SwiftSyntaxMacros
-import OrderedCollections
+import MCOrderedCollections
 /// A variable value containing additional `CodingKey`s for decoding.
 ///
 /// The `AliasedPropertyVariable` customizes decoding and initialization

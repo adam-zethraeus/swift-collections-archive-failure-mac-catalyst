@@ -5,16 +5,18 @@ import PackageDescription
 
 let package = Package(
     name: "MyLibrary",
+    platforms: [.iOS(.v17), .macCatalyst(.v17), .macOS(.v14), .driverKit(.v22), .tvOS(.v17), .visionOS(.v1), .watchOS(.v10)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "MyLibrary",
-            targets: ["MyLibrary", "MyLibrary2"]
+            targets: ["MyLibrary", "MyLibrary2", "MyLibrary3"]
         )
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-collections", from: "1.0.3"),
         .package(url: "https://github.com/pointfreeco/swift-composable-architecture", from: "1.13.0"),
+//        .package(url: "https://github.com/SwiftyLab/MetaCodable", from: "1.3.0"),
         .package(path: "../MetaCodable")
     ],
     targets: [
@@ -23,14 +25,19 @@ let package = Package(
         .target(
             name: "MyLibrary",
             dependencies: [
-                "MetaCodable",
-                .product(name: "OrderedCollections", package: "swift-collections")
+                "MetaCodable"
             ]
         ),
         .target(
             name: "MyLibrary2",
             dependencies: [
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+            ]
+        ),
+        .target(
+            name: "MyLibrary3",
+            dependencies: [
+                .product(name: "OrderedCollections", package: "swift-collections")
             ]
         ),
         .testTarget(

@@ -1,7 +1,7 @@
  import SwiftSyntax
  import SwiftSyntaxBuilder
  import SwiftSyntaxMacros
-import OrderedCollections
+import MCOrderedCollections
 
 /// A type storing variable and `CodingKey`
 /// data using the "trie" tree algorithm.

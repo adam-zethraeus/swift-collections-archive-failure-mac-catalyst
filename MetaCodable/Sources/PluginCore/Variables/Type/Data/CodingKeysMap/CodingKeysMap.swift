@@ -1,6 +1,6 @@
  import SwiftSyntax
  import SwiftSyntaxMacros
-import OrderedCollections
+import MCOrderedCollections
 /// A map containing all the case names
 /// for keys in a particular type.
 ///
