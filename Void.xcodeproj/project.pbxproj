@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F72334A02C980C5C005E316A /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = F723349F2C980C5C005E316A /* MyLibrary */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F72334712C980B52005E316A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		F723345F2C980B51005E316A /* Void.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Void.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72334702C980B52005E316A /* VoidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F723347A2C980B52005E316A /* VoidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F723349D2C980C41005E316A /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MyLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F72334A02C980C5C005E316A /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +81,11 @@
 		F72334562C980B51005E316A = {
 			isa = PBXGroup;
 			children = (
+				F723349D2C980C41005E316A /* MyLibrary */,
 				F72334612C980B51005E316A /* Void */,
 				F72334732C980B52005E316A /* VoidTests */,
 				F723347D2C980B52005E316A /* VoidUITests */,
+				F723349E2C980C5C005E316A /* Frameworks */,
 				F72334602C980B51005E316A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,13 @@
 				F723347A2C980B52005E316A /* VoidUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F723349E2C980C5C005E316A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +127,7 @@
 			);
 			name = Void;
 			packageProductDependencies = (
+				F723349F2C980C5C005E316A /* MyLibrary */,
 			);
 			productName = Void;
 			productReference = F723345F2C980B51005E316A /* Void.app */;
@@ -392,7 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Void/Preview Content\"";
-				DEVELOPMENT_TEAM = QC68T7ZF53;
+				DEVELOPMENT_TEAM = 4CSQA34798;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -411,13 +427,14 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = llc.goodhats.Void;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ambiencehealthcare.void;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -431,7 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Void/Preview Content\"";
-				DEVELOPMENT_TEAM = QC68T7ZF53;
+				DEVELOPMENT_TEAM = 4CSQA34798;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -450,13 +467,14 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = llc.goodhats.Void;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ambiencehealthcare.void;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -591,6 +609,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F723349F2C980C5C005E316A /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F72334572C980B51005E316A /* Project object */;
 }
